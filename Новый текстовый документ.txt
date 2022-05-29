@@ -1,0 +1,89 @@
+from fod import parol
+class Bots:
+    name = 'LevelBot'
+
+    def __init__(self, Login, Porol):
+        self.l = Login
+        self.p = Porol
+
+    def parol(self):
+     login = input('Vedite login: ')
+     password = input('Vedite password: ')
+     if login == self.l and password == self.p:
+         return self.worlt_Biba()
+
+     else:
+         print('Ne pravilni porol ili login!')
+         while login != self.l and password != self.p:
+             return self.parol()
+
+
+    def worlt_Biba(self):
+        print(f'''Hello {self.name}!
+Please, select one: 
+1) Besplatni odin yrok  
+2) skolko ludei u nas zanimautsa 
+3) uroki 
+4) o nas  ''')
+        a = input('- ')
+        if a == '1':
+            return self.odin_urok()
+        elif a == '2':
+            return self.ludi()
+        elif a == '3':
+            return self.uroki()
+        elif a == '4':
+            return self.razrabotchiki()
+
+    def odin_urok(self):
+        print('Downloading...')
+        print(f'''
+1) Svazatsa operatorom
+2) instruksia''')
+        d = input('Chto vibrali? \n- ')
+        if d == '1':
+            print('pozvanite etomu nomeru 87475386052')
+        elif d == '2':
+            print('''
+1) pozvonit nomeru
+2) sakazat chto vi na probni urok
+3) obazatelno prihodit s noutbukon ili zahodite na zoom urok''')
+
+    def ludi(self):
+        print('''Zdrastvuite! spasibo za lubapitstva
+1)Tabigat Karbaev 20 let
+2)Sultan Nurislam 20 let 
+3)Nursulu Aitkuzu 21 let''')
+
+    def uroki(self):
+        print(''' u nas est urok
+1) Matematika
+2) Angliski 
+3) Informatika
+4) Fizika
+5) programmirovanie''')
+        b = input('chto vibrali?')
+        if b == '1' or '2' or '3' or '4' or '5':
+            print('''Urok stoit 15 000 tg
+dla zapisi zvonit na nomer 87475386052''')
+
+    def razrabotchiki(self):
+        print('''Nash uchitel Tabigat Karbaev mi ego ucheneki Sultan Mahmud i Sultan Beibars''')
+
+g = Bots('biba2008' , '2008bs')
+
+g.parol()
+
+
+
+
+def parol(self):
+    login = input('Vedite login: ')
+    password = input('Vedite password: ')
+    if login == self.l and password == self.p:
+        return self.worlt_Biba()
+
+    else:
+        print('Ne pravilni porol ili login!')
+        while login != self.l and password != self.p:
+            return self.parol()
